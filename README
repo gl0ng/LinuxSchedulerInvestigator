@@ -1,0 +1,35 @@
+Investigate the performance of the Linux Scheduler
+
+By Garrett Long
+
+---Executables---
+./benchmarks - A program which reports benchmarks for three Linux scheduling schemes
+./pi - A simple program for statistically calculating pi
+./mix - A simple i/o and CPU bound program.
+./rw - A simple i/o program.
+
+---Examples---
+Build:
+ make
+
+Clean:
+ make clean
+
+pi:
+ ./pi
+ ./pi <Number of Iterations>
+
+
+rw:
+ ./rw
+ ./rw <#Bytes to Write to Output File>
+ ./rw <#Bytes to Write to Output File> <Block Size>
+ ./rw <#Bytes to Write to Output File> <Block Size> <Input Filename>
+ ./rw <#Bytes to Write to Output File> <Block Size> <Input Filename> <Output Filename>
+
+mix:
+ ./mix
+
+benchmarks:
+ sudo ./bencmarks
+
